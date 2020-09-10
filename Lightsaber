@@ -1,0 +1,60 @@
+public class lightsaber
+{
+  public void main(String args[])
+  {
+    size(640,420);
+    
+    background(0,0,0);
+    System.out.println("Choose Your Color");
+    System.out.println("Left Arrow For Green");
+    System.out.println("Right Arrow for Purple");
+    System.out.println("UP Arrow for Blue");
+    System.out.println("Down Arrow For Red");
+      
+    fill(110,114,107);
+    rect(45,150,190,50);
+    
+    fillVal=color(126);
+    
+    void draw()
+    {
+    fill(fillVal);
+    stroke(246,0,0);
+    rect(200,150,390,50);
+    }
+    
+     void keyPressed()
+    {
+      if (key==CODED){
+        if(keyCode==UP){
+          fillVal=(20,0,255);
+        } else if (keyCode==DOWN) {
+          fillVal=231;
+        } else if (keyCode==LEFT) {
+          fillVal=(20,242,18);
+        } else if (keyCode==RIGHT) {
+          fillVal=(204,18,223);
+        }
+      }else {
+        fillVal=20,0,255;
+      }
+    fill(251,249,249);
+    stroke(255,255,255);
+    rect(200,163,375,25);
+    
+    fill(0,0,0);
+    stroke(0,0,0);
+    rect(55,151,10,30);
+    rect(75,151,10,30);
+    rect(95,151,10,30);
+    rect(115,151,10,30);
+    
+    fill(247,5,5);
+    stroke(247,5,5);
+    rect(153,151,20,20);
+    
+   
+    }
+          
+  }
+}
